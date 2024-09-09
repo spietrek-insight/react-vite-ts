@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100vh;
+}
+
+/* custom base styles */
+@layer base {
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    background-color: theme('colors.gray3');
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* custom components styles */
+@layer components {
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.rbc-time-gutter .rbc-time-slot {
+  background-color: #fff !important;
+}
+
+.rbc-time-slot,
+.rbc-time-slot {
+  font-size: 13px;
+}
+
+.rbc-time-header-gutter {
+  min-width: 68.25px !important;
+}
+
+.p-tabview-nav-container {
+  background-color: theme('colors.gray3');
+}
+
+.p-tabview-nav {
+  background-color: theme('colors.gray3');
+}
+
+.p-tabview-nav-link {
+  background-color: theme('colors.gray3');
+}
+
+.p-tabview-panels {
+  background-color: theme('colors.gray3');
+}
+
+.p-unselectable-text {
+  margin-right: 8px;
+}
+
+.p-tabview-selected {
+  .p-tabview-title {
+    color: theme('colors.primary');
+  }
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  border-color: theme('colors.primary');
+}
+
+.p-tabview-nav-link {
+  height: 60px;
+  padding: 8px;
+}
+
+.p-inputtext.p-inputtext-sm {
+  font-size: 0.85rem;
+  padding: 0.4rem;
+}
+
+/* .p-dialog-header {
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.p-dialog-content {
+  padding: 0.5rem;
+} */
+
+.p-dialog-footer {
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.p-listbox .p-listbox-list .p-listbox-item.p-highlight {
+  background-color: theme('colors.primary');
+  color: theme('colors.white');
+}
