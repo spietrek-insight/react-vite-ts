@@ -1,7 +1,10 @@
 import React from 'react'
 
+import { useNavigate } from 'react-router-dom'
+
 import { Todo } from '@/schemas/todoSchema'
 
+import { Button } from '../atoms/Button'
 import { TodoSection } from '../organisms/TodoSection'
 
 interface TodoTemplateProps {
@@ -18,16 +21,25 @@ export const TodoTemplate: React.FC<TodoTemplateProps> = ({
   onRefresh,
   onToggleComplete,
   onDelete,
-}) => (
-  <div className="mx-auto max-w-4xl p-4">
-    <h1 className="mb-6 text-3xl font-bold">Todo List</h1>
-    <TodoSection
-      title="All Todos"
-      isLoading={isLoading}
-      isError={isError}
-      onRefresh={onRefresh}
-      onToggleComplete={onToggleComplete}
-      onDelete={onDelete}
-    />
-  </div>
-)
+}) => {
+  const navigate = useNavigate()
+
+  const handleGoHome = () => {
+    navigate('/')
+  }
+
+  return (
+    <div className="mx-auto max-w-4xl p-4">
+      <Button onClick={handleGoHome}>Home</Button>
+      <h1 className="mb-6 text-3xl font-bold">Todo List</h1>
+      <TodoSection
+        title="All Todos"
+        isLoading={isLoading}
+        isError={isError}
+        onRefresh={onRefresh}
+        onToggleComplete={onToggleComplete}
+        onDelete={onDelete}
+      />
+    </div>
+  )
+}

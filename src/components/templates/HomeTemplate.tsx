@@ -21,7 +21,7 @@ export const HomeTemplate = (): JSX.Element => {
               <Link className="btn btn-sm mb-4" to="hooks">
                 Hooks Examples
               </Link>
-              <Link className="btn btn-sm mb-4" to="todo">
+              <Link className="btn btn-sm mb-4 ml-4" to="todo">
                 Atomic State Flow
               </Link>
               <Link className="btn btn-sm mb-4 ml-4" to="hocs">
