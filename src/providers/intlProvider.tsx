@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/jsx-no-constructed-context-values */
 import { createContext, useEffect, useState } from 'react'
 
 import { IntlProvider } from 'react-intl'
