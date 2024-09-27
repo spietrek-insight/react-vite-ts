@@ -19,7 +19,8 @@
     "pwa:test": "serve -s dist -l 60562",
     "server": "npx json-server data/db.json -p 3001",
     "dependency": "npx depcruise --config .dependency-cruiser.cjs --output-type json src > dependency-cruiser-output.json",
-    "dupe:check": "jscpd --pattern \"src/**/*.ts*\" --ignore \"**/*.spec.ts\""
+    "dupe:check": "jscpd --pattern \"src/**/*.ts*\" --ignore \"**/*.spec.ts\"",
+    "yarn:upgrade": "yarn set version 4.5.0"
   },
   "dependencies": {
     "@faker-js/faker": "^9.0.3",
@@ -60,7 +61,7 @@
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.7.3",
+    "@types/node": "^22.7.4",
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
     "@types/react-gtm-module": "^2.0.3",
@@ -76,7 +77,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-compiler": "0.0.0-experimental-51a85ea-20240601",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.12",
@@ -102,7 +103,7 @@
     "vite-plugin-pwa": "^0.20.5",
     "vitest": "2.1.1"
   },
-  "packageManager": "yarn@4.4.1",
+  "packageManager": "yarn@4.5.0",
   "engines": {
     "node": "20"
   }
